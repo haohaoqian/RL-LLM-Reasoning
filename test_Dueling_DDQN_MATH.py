@@ -153,13 +153,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
 
-    # problem_indexs = [6, 8, 9, 11, 38, 49, 60, 74, 93, 109]
-
     if args.test_dataset == 'GSM8K':
         problem_indexs = list(range(1319))
     elif args.test_dataset == 'MATH':
         problem_indexs = list(range(5000))
-        # problem_indexs = list(range(100))
     elif args.test_dataset == 'GPQA':
         problem_indexs = list(range(448))
     elif args.test_dataset == 'MMLU-STEM':
