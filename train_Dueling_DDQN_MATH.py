@@ -63,8 +63,6 @@ class Dueling_DDQN_agent():
 
         self.dataset = dataset
         self.LLM_name = LLM_name
-        # self.problem_indexs = [8]
-        # self.problem_indexs = [6, 8, 9, 11, 38, 49, 60, 74, 93, 109]
         self.problem_indexs = pickle.load(open(os.path.join('data', problem_indexs_name, LLM_name.split("/")[-1], dataset, 'indexs.pkl'), "rb"))
         self.random_problems = random_problems
         self.max_depth = max_depth
